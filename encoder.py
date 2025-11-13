@@ -23,11 +23,6 @@ WORDLIST = [
 ]
 
 def encode_shellcode(shellcode: bytes, wordlist=WORDLIST) -> str:
-    """
-    Prend un shellcode (type bytes) et renvoie une chaîne de mots
-    séparés par des espaces.
-    Chaque byte b devient wordlist[b].
-    """
     if len(wordlist) != 256:
         raise ValueError(f"Wordlist must contain 256 words, got {len(wordlist)}")
 
