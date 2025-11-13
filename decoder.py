@@ -25,9 +25,7 @@ WORDLIST = [
 
 
 def decode_shellcode(encoded: str, wordlist=WORDLIST) -> bytes:
-    if len(wordlist) != 256:
-        raise ValueError(f"Wordlist must contain 256 words, got {len(wordlist)}")
-
+    
     word_to_index = {word: index for index, word in enumerate(wordlist)}
     
     words = encoded.split()
