@@ -8,3 +8,4 @@ Encode et décode des shellcodes en utilisant une liste de mots liés à League 
 
 - `encoder.py` : Transforme un shellcode (bytes) en une suite de mots
 - `decoder.py` : Transforme une suite de mots en shellcode (bytes)
+- `decoder.c` : Transforme une suite de mots en shellcode mais en c (directement prêt à l'emploi dans un malware)
